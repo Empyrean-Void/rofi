@@ -1,0 +1,10 @@
+#! /bin/sh
+
+chosen=$(printf "  Add Mark\n  Delete Mark\n󰜶 Goto Mark" | rofi -dmenu -i -p "Marks:")
+
+case "$chosen" in
+	"  Add Mark") i3-input -F 'mark %s' -l 1 -P 'Mark: ' ;;
+	"  Delete Mark") i3-input -F 'unmark %s' -l 1 -P 'Mark: ' ;;
+	"󰜶 Goto Mark") i3-input -F '[con_mark="%s"] focus' -l 1 -P 'Goto: ' ;;
+	*) exit 1 ;;
+esac

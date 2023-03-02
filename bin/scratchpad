@@ -1,0 +1,9 @@
+#! /bin/sh
+
+chosen=$(printf "  Show\n  Hide" | rofi -dmenu -i -p "Scratchpad:")
+
+case "$chosen" in
+	"  Show") i3-msg scratchpad show ;;
+	"  Hide") i3-msg move scratchpad ;;
+	*) exit 1 ;;
+esac

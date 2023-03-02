@@ -1,0 +1,13 @@
+configuration {
+  display-drun: "Applications:";
+  drun-display-format: "{icon} {name}";
+  display-filebrowser: "Files:";
+  filebrowser-display-format: "{icon} {name}";
+  display-window: "Windows:";
+  window-display-format: "{icon} {name}";
+  modi: "window,drun,filebrowser,calc";
+  font: "Iosevka Nerd Font 12";
+  show-icons: true;
+  icon-theme: "Vimix-Doder-dark";
+}
+@theme "~/.config/rofi/themes/one-dark.rasi"
