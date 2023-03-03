@@ -38,12 +38,12 @@ element-icon {
 
 entry {
     background-color: @bg;
-    padding: 0 10 0 10;
     text-color: @fg;
 }
 
 inputbar {
     children: [prompt, entry];
+    padding: 2 0 2 0;
 }
 
 listview {
